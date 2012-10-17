@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0" id = "org.openteacher.mobile" version = "0.1.0">
 	<!-- Basic metadata -->
-    <name>OpenTeacher mobile</name>
+    <name>OpenTeacher</name>
     <description>Your personal tutor</description>
     <author href="http://launchpad.net/~openteachermaintainers" email="openteachermaintainers@lists.launchpad.net">OpenTeacher maintainers</author>
 
 	<!-- PhoneGap config -->
 	<preference name="permissions" value="none" />
 
-	<!-- graphics -->
-    <icon src="openteacher.png" />
-    <gap:splash src="openteacher.png" />
+	<!-- Graphics -->
+    <icon src="icon.png" />
+    <gap:splash width='320' height='480' src="splash-portrait.png" />
+    <gap:splash width='480' height='320' src="splash-landscape.png" />
 </widget>
