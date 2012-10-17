@@ -20,19 +20,13 @@
 <html>
 	<head>
 		<meta charset='UTF-8' />
-		<meta name='viewport' content='widget=device-width, initial-scale=1, maximum-scale=1' />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<link rel='icon'  type='image/png' href='openteacher.png' />
+
+		<meta name='viewport' content='widget=device-width, initial-scale=1' />
+		<meta name='apple-mobile-web-app-capable' content='yes' />
+		<link rel='icon' type='image/png' href='openteacher.png' />
 
 		<link type='text/css' rel='stylesheet' href='css/themes/default/jquery.mobile-1.2.0.css' />
-
-		<script type='text/javascript' src='translations/index.js'></script>
-		<script type='text/javascript' src='scr/js.js'></script>
-
 		<style type='text/css'>
-			.ui-page {
-				-webkit-backface-visibility:hidden;
-			}
 			#missing-separator-popup, #overwrite-popup {
 				max-width: 400px;
 			}
@@ -46,11 +40,14 @@
 				font-size: 24pt;
 			}
 		</style>
+
+		<script type='text/javascript' src='translations/index.js'></script>
+		<script type='text/javascript' src='scr/js.js'></script>
 	</head>
 	<body>
 		<!-- enter page -->
 		<div data-role='page' id='enter-page'>
-			<div data-role='header' data-id='header' data-position='fixed'>
+			<div data-role='header' data-position='fixed' data-id='header'>
 	<h1 id='enter-list-header'></h1>
 	<a href="#options-dialog" data-icon="gear" class="options-dialog-link ui-btn-right"></a>
 </div>
@@ -89,7 +86,7 @@
 
 		<!-- teach page -->
 		<div data-role='page' id='teach-page'>
-			<div data-role='header' data-id='header' data-position='fixed'>
+			<div data-role='header' data-position='fixed' data-id='header'>
 	<h1 id='teach-me-header'></h1>
 	<a href="#options-dialog" data-icon="gear" class="options-dialog-link ui-btn-right"></a>
 </div>
