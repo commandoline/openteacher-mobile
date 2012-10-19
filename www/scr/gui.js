@@ -558,16 +558,21 @@
 					optionsDialog.setupSettings();
 					
 					//make the menu button on android work
-					function onMenuKeyDown() {
-						alert('press!');
-						$.mobile.changePage('#options-dialog','pop',false,true);
-					}
-					document.addEventListener("menubutton", onMenuKeyDown, false);
+					document.addEventListener("deviceready", onDeviceReady, false);
 
 					//this part of main() is supposed to only run once.
 					setupDone = true;
 				}
 			});
+		};
+		
+		onDeviceReady = function() {
+			document.addEventListener("menubutton", onMenuKeyDown, false);
+		};
+		
+		onMenuKeyDown = function() {
+			$.mobile.changePage('#options-dialog','pop',false,true);
+			alert('press!');
 		};
 
 		startLesson = function () {
