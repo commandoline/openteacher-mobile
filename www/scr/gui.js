@@ -558,9 +558,11 @@
 					optionsDialog.setupSettings();
 					
 					//make the menu button on android work
-					document.addEventListener("menubutton", function() {
+					function onMenuKeyDown() {
+						alert('press!');
 						$.mobile.changePage('#options-dialog','pop',false,true);
-					}, false);
+					}
+					document.addEventListener("menubutton", onMenuKeyDown, false);
 
 					//this part of main() is supposed to only run once.
 					setupDone = true;
