@@ -27,10 +27,6 @@
 
 		<link type='text/css' rel='stylesheet' href='css/themes/default/jquery.mobile-1.2.0.css' />
 		<style type='text/css'>
-			* {
-				margin: 0 auto;
-				-webkit-transform: translateZ(0);
-			}
 			#missing-separator-popup, #overwrite-popup {
 				max-width: 400px;
 			}
@@ -51,9 +47,16 @@
 	<body>
 		<!-- enter page -->
 		<div data-role='page' id='enter-page'>
-			<div data-role='header' data-position='fixed' data-id='header'>
+			<div data-role='header' data-id='header'>
 	<h1 id='enter-list-header'></h1>
 	<a href="#options-dialog" data-icon="gear" class="options-dialog-link ui-btn-right"></a>
+	<div class='navbar' data-role='navbar'>
+		<ul>
+			<li><a href='#enter-page' class='enter-page-link ui-btn-active ui-state-persist' data-icon='data-plus'></a></li>
+			<li><a href='#teach-page' class='teach-page-link' data-icon='check'></a></li>
+			<li><a id='list-management-dialog-link' href='#list-management-dialog' data-icon='gear'></a></li>
+		</ul>
+	</div>
 </div>
 
 			<div data-role='content'>
@@ -76,23 +79,20 @@
 					</div>
 				</div>
 			</div>
-			<div data-role='footer' data-id='footer' data-position='fixed'>
-	<div class='navbar' data-role='navbar'>
-		<ul>
-			<li><a id='enter-page-link' href='#enter-page' class='ui-btn-active ui-state-persist' data-icon='data-plus'></a></li>
-			<li><a id='teach-page-link' href='#teach-page'  data-icon='check'></a></li>
-			<li><a id='list-management-dialog-link' href='#list-management-dialog' data-icon='gear'></a></li>
-		</ul>
-	</div>
-</div>
-
 		</div>
 
 		<!-- teach page -->
 		<div data-role='page' id='teach-page'>
-			<div data-role='header' data-position='fixed' data-id='header'>
+			<div data-role='header' data-id='header'>
 	<h1 id='teach-me-header'></h1>
 	<a href="#options-dialog" data-icon="gear" class="options-dialog-link ui-btn-right"></a>
+	<div class='navbar' data-role='navbar'>
+		<ul>
+			<li><a href='#enter-page' class='enter-page-link' data-icon='data-plus'></a></li>
+			<li><a href='#teach-page' class='teach-page-link ui-btn-active ui-state-persist' data-icon='check'></a></li>
+			<li><a id='list-management-dialog-link' href='#list-management-dialog' data-icon='gear'></a></li>
+		</ul>
+	</div>
 </div>
 
 			<div data-role='content'>
@@ -115,16 +115,6 @@
 				<!-- hackish progress bar -->
 				<input id='progress-bar' type='range' value='0' min='0' max='100' data-highlight='true' />
 			</div>
-			<div data-role='footer' data-id='footer' data-position='fixed'>
-	<div class='navbar' data-role='navbar'>
-		<ul>
-			<li><a id='enter-page-link' href='#enter-page'  data-icon='data-plus'></a></li>
-			<li><a id='teach-page-link' href='#teach-page' class='ui-btn-active ui-state-persist' data-icon='check'></a></li>
-			<li><a id='list-management-dialog-link' href='#list-management-dialog' data-icon='gear'></a></li>
-		</ul>
-	</div>
-</div>
-
 		</div>
 
 		<div id='result-dialog' data-role='dialog'>
