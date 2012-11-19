@@ -17,7 +17,7 @@ In a terminal:
 - ``python openteacher.py -p generate-mobile <output_dir> <minify>``
 
 Specify the directory to place the source in as the first argument and
-specify 'true' or 'false' (without quots) as the second, depending on
+specify 'true' or 'false' (without quotes) as the second, depending on
 wheter or not you want to minify the javascript and css code.
 
 Info on OpenTeacher
