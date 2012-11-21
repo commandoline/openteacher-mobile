@@ -38,6 +38,10 @@ css/themes/default/*, scr/jquery.mobile-1.2.0.js:
 	Released under the MIT license.
 	http://jquery.org/license
 
+css/themes/ios/*:
+	Distributed under the [MIT License](http://en.wikipedia.org/wiki/MIT_License).
+	Downloaded from: https://github.com/taitems/iOS-Inspired-jQuery-Mobile-Theme
+
 css/themes/android/*, scr/jquery.mobile.android-theme.js:
 	jQuery Mobile Framework 1.0.1
 	http://jquerymobile.com

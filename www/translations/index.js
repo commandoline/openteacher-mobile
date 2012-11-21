@@ -1,1 +1,1 @@
-var translationIndex={"en":{"name":"I speak English"},"nl":{"url":"translations/nl.json","name":"Ik spreek Nederlands"}};
+var translationIndex={"en":{"name":"I speak English"},"nl":{"url":"translations/nl.json","name":"Ik spreek Nederlands"},"pt_BR":{"url":"translations/pt-BR.json","name":"Eu falo portugu\u00eas brasileiro"}};
